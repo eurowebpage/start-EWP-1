@@ -1,16 +1,4 @@
-<?php 
-require_once("url.inc.php"); // votre chemin à partir de la racine
-include(BASE_URL . 'url.php');
-?>
-<!DOCTYPE html>
-<html lang="fr"><head>
-  <title>Data Tools Example boostrap 4 Star EWP 1</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Data Tools Example boostrap 4 Star EWP 1">
-  <meta name="keywords" content="data,tool,code">
-  <?php include(BASE_URL . 'include/head.php'); ?>
-
+<!--  #####################  Head  #####################  -->
 <link href="https://eurowebpage.eu/theme/start1/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
 <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -28,24 +16,9 @@ $(document).ready(function() {
 <style>
 table.dataTable{border-collapse:collapse !important;}
 </style>
+<!--  #####################  Fin Head  #####################  -->
 
-</head>
-
-<body>
-<?php include(BASE_URL . 'include/nav.php'); ?>
-  <!-- Header -->
-  <header class="bg-primary py-5 mb-5 text-center">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-         
-          <h1 class="display-5 text-white mt-5 mb-3 font-weight-light">Data Tools</h1>
-           <img src="images/ban1.jpg" class="img-fluid d-block mx-auto mb-3 mt-2" alt="site web seo"/> 
-          <p class="lead mb-5 text-white">Exemple Data Tools boostrap 4 Star EWP 1</p>
-        </div>
-      </div>
-    </div>
-  </header>
+<!--  ##################### Body Table #####################  -->
    <section><div class="container">
    <!-- Breadcrumbs-->
       <ol class="breadcrumb">
@@ -210,39 +183,8 @@ table.dataTable{border-collapse:collapse !important;}
     
        </div>
   </section>
+<!--  #####################  Fin Table Body  #####################  -->
 
-
-  
-   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; eurowebpage.info <?php auto_copyright(2016);  // 2019 - Current ?>
-</p>
-      <?php 
-// No argument required for current year.
-// Otherwise, pass start year as a 4-digit value.
-function auto_copyright($startYear = null) {
-	$thisYear = date('Y');  // get this year as 4-digit value
-    if (!is_numeric($startYear)) {
-		$year = $thisYear; // use this year as default
-	} else {
-		$year = intval($startYear);
-	}
-	if ($year == $thisYear || $year > $thisYear) { // $year cannot be greater than this year - if it is then echo only current year
-		echo "&copy; $thisYear"; // display single year
-	} else {
-		echo "&copy; $year&ndash;$thisYear"; // display range of years
-	}   
- } 
- ?>
-
-
-    </div>
-    <!-- /.container -->
-  </footer>
   <!-- Plugin JavaScript -->
   <script src="https://eurowebpage.eu/theme/start1/vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="https://eurowebpage.eu/theme/start1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
